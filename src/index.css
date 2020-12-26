@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a:active, 
+a:hover,  
+a {
+  text-decoration: none;
+  color: #000
+}
+
+.active::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #343a40!important;
+    top: 5px;
+}
+
+.fs-castom {
+  font-size: calc(10px + 1.1vmin);  
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+.width-chat {
+  width: 100%;
+  max-width: 600px;
+  height: calc(93vh) !important;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.container-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 5px;
+  grid-auto-rows: minmax(140px, auto);
+}
+
+.caston-links {
+  text-decoration: underline;
+  font-size: calc(10px + 1.1vmin);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.caston-files {
+  font-size: calc(10px + 1.1vmin);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  cursor: pointer;
+}
+
+.caston-files:hover {
+  text-decoration: underline;
+}
+
+.castom-textarea {
+  resize: none;
+  width: 70%;
+  font-size: calc(10px + 1.1vmin);
+}
+
+.file-reader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+}
+
+.file-frame {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.file-frame::-webkit-scrollbar {
+  width: 0;
+}
+
+.mw-48px {
+  max-width: '48px'
+}
+
+.chat-photo-castom {
+  width: 100%;
+  min-width: 230px;
+  height: auto;
+  background-size: cover;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-position: center center;
+}
+
+.m-chat-castom {
+  font-size: calc(10px + 2vmin);
+  overflow-wrap: anywhere !important;
+}
+
+.avatar-fixed-foto {
+  width: 55px;
+  height: 55px;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+}
+
+.top-right-absolute {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  z-index: 10000;
+}
+
+.top-right-absolute-pill {
+  position: absolute;
+  top: -12px;
+  right: calc(-10px - 2vw);
+  z-index: 1000;
+}
+
+.top-right-absolute-editor {
+  position: absolute;
+  top: calc(0px + 2.4vh);
+  right: 5px;
+  z-index: 1000;
+}
+
+.height-px64 {
+   height: 64px;
+}
+
+.loader-editor {
+  position: absolute;
+  z-index: 1000;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
